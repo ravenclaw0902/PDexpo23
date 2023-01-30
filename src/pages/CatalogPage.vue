@@ -10,7 +10,7 @@
       </q-tabs>
     </q-card>
     <q-card
-      v-touch-swipe.mouse.left.down.right="handleSwipe"
+      v-touch-swipe.mouse.up.left.down.right="handleSwipe"
       class="custom-area cursor-pointer bg-white relative-position row flex-center"
     >
       <q-btn
@@ -68,6 +68,6 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "IndexPage",
+  name: "CatalogPage",
 });
 </script>
