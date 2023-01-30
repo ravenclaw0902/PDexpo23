@@ -10,7 +10,9 @@
       </div>
 
       <q-btn
-        class="q-mt-xl"
+        align="around"
+        class="q-mt-xl glossy"
+        rounded
         color="white"
         text-color="red"
         unelevated
