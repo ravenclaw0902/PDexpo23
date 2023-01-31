@@ -1,5 +1,6 @@
 <template>
   <q-page class="flex flex-center">
+    <!--|  Navigation tabs  |-->
     <q-card
       class="custom-tabsname cursor-pointer bg-white relative-position row flex-center"
     >
@@ -9,23 +10,17 @@
         <q-route-tab to="../contacts/" label="Контакты" />
       </q-tabs>
     </q-card>
+
+    <!--|  Greetings section  |-->
+    <q-item></q-item>
+
+    <!--|  Navigation joystick  |-->
     <q-card
       v-touch-swipe.mouse.up.left.down.right="handleSwipe"
       class="custom-area cursor-pointer bg-white relative-position row flex-center"
     >
       <div class="custom-block"></div>
-      <q-btn
-        class="glossy custom-button"
-        rounded
-        push
-        no-caps
-        disabled
-        hidden
-        size="xl"
-        color="red"
-        to="../"
-        label="Назад"
-      />
+      <div class="custom-block"></div>
       <div class="custom-block"></div>
       <q-btn
         class="glossy custom-button"

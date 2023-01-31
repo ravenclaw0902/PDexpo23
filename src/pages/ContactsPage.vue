@@ -1,5 +1,6 @@
 <template>
   <q-page class="flex flex-center">
+    <!--|  Navigation tabs  |-->
     <q-card
       class="custom-tabsname cursor-pointer bg-white relative-position row flex-center"
     >
@@ -9,6 +10,8 @@
         <q-route-tab active to="../contacts/" label="Контакты" />
       </q-tabs>
     </q-card>
+
+    <!--|  Navigation joystick  |-->
     <q-card
       v-touch-swipe.mouse.up.left.down.right="handleSwipe"
       class="custom-area cursor-pointer bg-white relative-position row flex-center"
@@ -19,7 +22,7 @@
         rounded
         push
         no-caps
-        size="xl"
+        size="md"
         color="red"
         to="../"
         label="Назад"
@@ -30,7 +33,7 @@
         rounded
         push
         no-caps
-        size="xl"
+        size="md"
         color="red"
         to="../catalog/"
         label="Каталог"
@@ -43,7 +46,7 @@
         rounded
         push
         no-caps
-        size="xl"
+        size="md"
         color="red"
         to="../about/"
         label="О компании"
@@ -55,7 +58,7 @@
         push
         no-caps
         disabled
-        size="xl"
+        size="md"
         color="red"
         to="../contacts/"
         label="Контакты"
