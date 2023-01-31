@@ -6,8 +6,8 @@
     >
       <q-tabs align="left">
         <q-route-tab active to="../catalog/" label="Каталог" />
-        <q-route-tab to="../about/" label="О компании" />
         <q-route-tab to="../contacts/" label="Контакты" />
+        <q-route-tab to="../about/" label="О компании" />
       </q-tabs>
     </q-card>
 
@@ -28,17 +28,7 @@
         label="Назад"
       />
       <div class="custom-block"></div>
-      <q-btn
-        class="glossy custom-button"
-        rounded
-        push
-        no-caps
-        disabled
-        size="md"
-        color="red"
-        to="../catalog/"
-        label="Каталог"
-      />
+      <div class="custom-block"></div>
       <div class="custom-block center-block flex flex-center">
         <JoystickButton></JoystickButton>
       </div>

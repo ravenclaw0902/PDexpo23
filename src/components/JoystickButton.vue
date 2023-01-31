@@ -37,7 +37,7 @@
 <style lang="sass" scoped>
 .joystick
   width: 100%
-  max-width: 8rem
+  max-width: 6rem
   height: auto
   margin: auto
 .joy-elem
@@ -45,6 +45,7 @@
 .joy-elem:hover
   opacity: .75
 </style>
+
 <script>
 import { defineComponent } from "vue";
 
@@ -64,6 +65,11 @@ export default defineComponent({
     link: {
       type: String,
       default: "#",
+    },
+
+    status: {
+      type: String,
+      default: "visible",
     },
   },
 });

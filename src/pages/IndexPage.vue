@@ -1,18 +1,18 @@
 <template>
   <q-page class="flex flex-center">
     <!--|  Navigation tabs  |-->
-    <q-card
-      class="custom-tabsname cursor-pointer bg-white relative-position row flex-center"
-    >
-      <q-tabs align="left">
+    <q-card class="custom-tabsname bg-white relative-position row flex-center">
+      <q-tabs>
         <q-route-tab to="../catalog/" label="Каталог" />
-        <q-route-tab to="../about/" label="О компании" />
         <q-route-tab to="../contacts/" label="Контакты" />
+        <q-route-tab to="../about/" label="О компании" />
       </q-tabs>
     </q-card>
 
     <!--|  Greetings section  |-->
-    <q-item></q-item>
+    <q-card class="home-area bg-white relative-position row flex-center">
+      <h1></h1>
+    </q-card>
 
     <!--|  Navigation joystick  |-->
     <q-card
@@ -27,7 +27,7 @@
         rounded
         push
         no-caps
-        size="xl"
+        size="md"
         color="red"
         to="../catalog/"
         label="Каталог"
@@ -40,7 +40,7 @@
         rounded
         push
         no-caps
-        size="xl"
+        size="md"
         color="red"
         to="../about/"
         label="О компании"
@@ -51,7 +51,7 @@
         rounded
         push
         no-caps
-        size="xl"
+        size="md"
         color="red"
         to="../contacts/"
         label="Контакты"
@@ -64,7 +64,7 @@
 <style lang="sass" scoped>
 .custom-tabsname
   width: 100%
-  max-width: 95vw
+  max-width: 100%
   height: auto
   max-height: 5vh
   margin: 0 auto auto
@@ -73,10 +73,19 @@
   box-shadow: none
 .custom-area
   width: auto
-  max-width: 95vw
+  max-width: 100%
   height: auto
   max-height: 75vh
   margin: auto auto .5rem
+  padding: .1%
+  border-radius: 0
+  box-shadow: none
+.home-area
+  width: 100%
+  max-width: 100%
+  height: auto
+  max-height: 75vh
+  margin: 2rem auto
   padding: .1%
   border-radius: 0
   box-shadow: none
