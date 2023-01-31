@@ -29,7 +29,7 @@ export default defineComponent({
 
     type: {
       type: String,
-      default: "section",
+      default: "custom-section",
     },
 
     link: {

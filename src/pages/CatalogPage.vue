@@ -4,7 +4,7 @@
       class="custom-tabsname cursor-pointer bg-white relative-position row flex-center"
     >
       <q-tabs align="left">
-        <q-route-tab to="../catalog/" label="Каталог" />
+        <q-route-tab active to="../catalog/" label="Каталог" />
         <q-route-tab to="../about/" label="О компании" />
         <q-route-tab to="../contacts/" label="Контакты" />
       </q-tabs>
@@ -13,6 +13,7 @@
       v-touch-swipe.mouse.up.left.down.right="handleSwipe"
       class="custom-area cursor-pointer bg-white relative-position row flex-center"
     >
+      <div class="custom-block"></div>
       <q-btn
         class="glossy custom-button"
         rounded
@@ -20,9 +21,24 @@
         no-caps
         size="xl"
         color="red"
+        to="../"
+        label="Назад"
+      />
+      <div class="custom-block"></div>
+      <q-btn
+        class="glossy custom-button"
+        rounded
+        push
+        no-caps
+        disabled
+        size="xl"
+        color="red"
         to="../catalog/"
         label="Каталог"
       />
+      <div class="custom-block center-block flex flex-center">
+        <JoystickButton></JoystickButton>
+      </div>
       <q-btn
         class="glossy custom-button"
         rounded
@@ -33,6 +49,7 @@
         to="../about/"
         label="О компании"
       />
+      <div class="custom-block"></div>
       <q-btn
         class="glossy custom-button"
         rounded
@@ -43,31 +60,50 @@
         to="../contacts/"
         label="Контакты"
       />
+      <div class="custom-block"></div>
     </q-card>
   </q-page>
 </template>
 
 <style lang="sass" scoped>
 .custom-tabsname
-  width: 95vw
-  height: 5vh
-  border-radius: 0
+  width: 100%
+  max-width: 95vw
+  height: auto
+  max-height: 5vh
+  margin: 0 auto auto
   padding: .1%
+  border-radius: 0
   box-shadow: none
 .custom-area
-  width: 95vw
-  height: 80vh
-  border-radius: 0
+  width: auto
+  max-width: 95vw
+  height: auto
+  max-height: 75vh
+  margin: auto auto .5rem
   padding: .1%
+  border-radius: 0
   box-shadow: none
+.custom-block
+  width: 100%
+  max-width: calc(100% / 3)
+  height: auto
+  min-height: 6rem
+  background: none
+  color: none
 .custom-button
-  margin: .15rem .5rem
+  width: 100%
+  max-width: calc(100% / 3)
 </style>
 
 <script>
 import { defineComponent } from "vue";
+import JoystickButton from "components/JoystickButton.vue";
 
 export default defineComponent({
   name: "CatalogPage",
+  components: {
+    JoystickButton,
+  },
 });
 </script>

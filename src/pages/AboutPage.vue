@@ -5,7 +5,7 @@
     >
       <q-tabs align="left">
         <q-route-tab to="../catalog/" label="Каталог" />
-        <q-route-tab to="../about/" label="О компании" />
+        <q-route-tab active to="../about/" label="О компании" />
         <q-route-tab to="../contacts/" label="Контакты" />
       </q-tabs>
     </q-card>
@@ -19,8 +19,6 @@
         rounded
         push
         no-caps
-        disabled
-        hidden
         size="xl"
         color="red"
         to="../"
@@ -45,6 +43,7 @@
         rounded
         push
         no-caps
+        disabled
         size="xl"
         color="red"
         to="../about/"
@@ -102,7 +101,7 @@ import { defineComponent } from "vue";
 import JoystickButton from "components/JoystickButton.vue";
 
 export default defineComponent({
-  name: "IndexPage",
+  name: "AboutPage",
   components: {
     JoystickButton,
   },

@@ -1,8 +1,8 @@
 {
   "name": "pdexpo23",
   "version": "0.0.1",
-  "description": "Russian Product interactive presentation",
-  "productName": "Russian Product",
+  "description": "Интерактивная презентация АО «РУССКИЙ ПРОДУКТ»",
+  "productName": "АО «РУССКИЙ ПРОДУКТ»",
   "author": "Igor Nesov <Nesov.ia@rusprod.ru>",
   "private": true,
   "scripts": {
