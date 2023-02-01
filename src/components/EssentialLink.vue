@@ -1,5 +1,6 @@
 <template>
-  <q-item clickable tag="a" target="_blank" :href="link" :class="type">
+  <!-- Main Menu -->
+  <q-item clickable tag="a" :target="target" :href="link" :class="type">
     <q-item-section v-if="icon" avatar>
       <q-icon :name="icon" />
     </q-item-section>
@@ -35,6 +36,11 @@ export default defineComponent({
     link: {
       type: String,
       default: "#",
+    },
+
+    target: {
+      type: String,
+      default: "_self",
     },
 
     icon: {

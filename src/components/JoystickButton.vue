@@ -1,4 +1,5 @@
 <template>
+  <!-- NavHelper -->
   <svg
     class="joystick"
     width="380"

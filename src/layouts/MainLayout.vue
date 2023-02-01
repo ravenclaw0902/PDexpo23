@@ -1,5 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
+    <!-- App header -->
     <q-header glossy class="bg-red" elevated>
       <q-toolbar color="white">
         <q-btn
@@ -9,7 +10,9 @@
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
-        />
+        >
+          <q-tooltip class="bg-white text-red">Навигация</q-tooltip>
+        </q-btn>
         <q-btn
           flat
           dense
@@ -17,9 +20,20 @@
           icon="search"
           aria-label="Search"
           @click="toggleSearch"
-        />
-
-        <q-toolbar-title> Quasar App </q-toolbar-title>
+        >
+          <q-tooltip class="bg-white text-red">Поиск</q-tooltip>
+        </q-btn>
+        <q-btn
+          flat
+          dense
+          round
+          icon="my_location"
+          aria-label="NavHelper"
+          @click="toggleNavHelper"
+        >
+          <q-tooltip class="bg-white text-red">Управление</q-tooltip>
+        </q-btn>
+        <q-item> </q-item>
       </q-toolbar>
     </q-header>
 
@@ -34,10 +48,11 @@
         />
       </q-list>
     </q-drawer>
-
+    <!-- Main section -->
     <q-page-container>
       <router-view />
     </q-page-container>
+    <!-- App footer -->
     <q-footer class="bg-red" elevated>
       <q-item></q-item>
     </q-footer>

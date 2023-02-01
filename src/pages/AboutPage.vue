@@ -1,4 +1,13 @@
 <template>
+  <div class="breadcrumbs-row">
+    <q-breadcrumbs class="text-pink" active-color="red">
+      <template v-slot:separator>
+        <q-icon size="1.2em" name="arrow_forward" color="red" />
+      </template>
+      <q-breadcrumbs-el icon="home" to="/" />
+      <BreadCrumbs></BreadCrumbs>
+    </q-breadcrumbs>
+  </div>
   <q-page class="flex flex-center">
     <!--|  Navigation tabs  |-->
     <q-card
@@ -91,11 +100,13 @@
 
 <script>
 import { defineComponent } from "vue";
+import BreadCrumbs from "components/BreadCrumbs.vue";
 import JoystickButton from "components/JoystickButton.vue";
 
 export default defineComponent({
   name: "AboutPage",
   components: {
+    BreadCrumbs,
     JoystickButton,
   },
 });
