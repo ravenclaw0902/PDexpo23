@@ -1,5 +1,140 @@
-// Global styles for app
-// Animations
+// GLOBAL STYLES
+:root {
+  --elem-red-100: rgba(207, 0, 0, 1);
+  --elem-red-75: rgba(207, 0, 0, 0.75);
+  --elem-red-50: rgba(207, 0, 0, 0.5);
+  --elem-red-25: rgba(207, 0, 0, 0.25);
+  --elem-red-0: rgba(207, 0, 0, 0);
+  --elem-ruby-100: rgba(125, 0, 0, 1);
+  --elem-ruby-75: rgba(125, 0, 0, 0.75);
+  --elem-ruby-50: rgba(125, 0, 0, 0.5);
+  --elem-ruby-25: rgba(125, 0, 0, 0.25);
+  --elem-ruby-0: rgba(125, 0, 0, 0);
+  --elem-yellow-100: rgba(255, 255, 0, 1);
+  --elem-yellow-75: rgba(255, 255, 0, 0.75);
+  --elem-yellow-50: rgba(255, 255, 0, 0.5);
+  --elem-yellow-25: rgba(255, 255, 0, 0.25);
+  --elem-yellow-0: rgba(255, 255, 0, 0);
+  --elem-sun-100: rgba(255, 204, 25, 1);
+  --elem-sun-75: rgba(255, 204, 25, 0.75);
+  --elem-sun-50: rgba(255, 204, 25, 0.5);
+  --elem-sun-25: rgba(255, 204, 25, 0.25);
+  --elem-sun-0: rgba(255, 204, 25, 0);
+  --elem-white-100: rgba(255, 255, 255, 1);
+  --elem-white-75: rgba(255, 255, 255, 0.75);
+  --elem-white-50: rgba(255, 255, 255, 0.5);
+  --elem-white-25: rgba(255, 255, 255, 0.25);
+  --elem-white-0: rgba(255, 255, 255, 0);
+  --elem-grey-100: rgba(228, 228, 228, 1);
+  --elem-grey-75: rgba(228, 228, 228, 0.75);
+  --elem-grey-50: rgba(228, 228, 228, 0.5);
+  --elem-grey-25: rgba(228, 228, 228, 0.25);
+  --elem-grey-0: rgba(228, 228, 228, 0);
+  --elem-graphite-100: rgba(99, 99, 99, 1);
+  --elem-graphite-75: rgba(99, 99, 99, 0.75);
+  --elem-graphite-50: rgba(99, 99, 99, 0.5);
+  --elem-graphite-25: rgba(99, 99, 99, 0.25);
+  --elem-graphite-0: rgba(99, 99, 99, 0);
+  --elem-black-100: rgba(0, 0, 0, 1);
+  --elem-black-75: rgba(0, 0, 0, 0.75);
+  --elem-black-50: rgba(0, 0, 0, 0.5);
+  --elem-black-25: rgba(0, 0, 0, 0.25);
+  --elem-black-0: rgba(0, 0, 0, 0);
+}
+// TYPOGRAPHY
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url("./fonts/Nunito-Regular.eot");
+  src: local("./fonts/Nunito-Regular"), local("./fonts/Nunito-Regular"),
+    url("./fonts/Nunito-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Nunito-Regular.woff2") format("woff2"),
+    url("./fonts/Nunito-Regular.woff") format("woff"),
+    url("./fonts/Nunito-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito-SemiBold";
+  src: url("./fonts/Nunito-SemiBold.eot");
+  src: local("./fonts/Nunito-SemiBold"), local("./fonts/Nunito-SemiBold"),
+    url("./fonts/Nunito-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Nunito-SemiBold.woff2") format("woff2"),
+    url("./fonts/Nunito-SemiBold.woff") format("woff"),
+    url("./fonts/Nunito-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url("./fonts/Nunito-Bold.eot");
+  src: local("./fonts/Nunito-Bold"), local("./fonts/Nunito-Bold"),
+    url("./fonts/Nunito-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Nunito-Bold.woff2") format("woff2"),
+    url("./fonts/Nunito-Bold.woff") format("woff"),
+    url("./fonts/Nunito-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cocon-Regular";
+  src: url("./fonts/Cocon-Regular.eot");
+  src: local("./fonts/Cocon-Regular"), local("./fonts/Cocon-Regular"),
+    url("./fonts/Cocon-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Cocon-Regular.woff2") format("woff2"),
+    url("./fonts/Cocon-Regular.woff") format("woff"),
+    url("./fonts/Cocon-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  color: var(--elem-red-100);
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-family: "Nunito-Bold", sans-serif;
+  font-size: 2rem;
+}
+h2 {
+  font-family: "Nunito-Bold", sans-serif;
+  font-size: 1.5rem;
+}
+h3 {
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 1.2rem;
+}
+h4 {
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 1rem;
+}
+h5 {
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 0.9rem;
+}
+h6 {
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 0.85rem;
+}
+p {
+  font-family: "Nunito-Regular", sans-serif;
+  margin-bottom: 1rem;
+}
+.title-scripted {
+  font-family: "Cocon-Regular", sans-serif;
+  font-weight: 400;
+}
+// ANIMATIONS
 @keyframes sun-ltr {
   0% {
     transform-origin: center center;
@@ -67,12 +202,13 @@
   -webkit-transition: all 1.2s ease-in-out 0.4s;
   transition: all 1.2s ease-in-out 0.4s;
 }
+// ELEMENTALS
 // Main layout styles
 .content-section {
   margin: 0 0 -3rem;
   padding: 0 0 3rem;
 }
-// Elements
+// Breadcrumbs
 .breadcrumbs-row {
   width: 100%;
   height: 2rem;
@@ -98,51 +234,6 @@
 }
 .mainlogo svg g.sundisc {
   animation: sun-rtl 60s linear 0s infinite normal;
-}
-.mainlogo svg:hover g.naming path.letter {
-  animation: splash 0.25s linear 1 normal;
-}
-.mainlogo svg g.naming path.letter.letter-01 {
-  animation-delay: 0.5s;
-}
-.mainlogo svg g.naming path.letter.letter-02 {
-  animation-delay: 0.55s;
-}
-.mainlogo svg g.naming path.letter.letter-03 {
-  animation-delay: 0.6s;
-}
-.mainlogo svg g.naming path.letter.letter-04 {
-  animation-delay: 0.65s;
-}
-.mainlogo svg g.naming path.letter.letter-05 {
-  animation-delay: 0.7s;
-}
-.mainlogo svg g.naming path.letter.letter-06 {
-  animation-delay: 0.75s;
-}
-.mainlogo svg g.naming path.letter.letter-07 {
-  animation-delay: 0.8s;
-}
-.mainlogo svg g.naming path.letter.letter-08 {
-  animation-delay: 0.85s;
-}
-.mainlogo svg g.naming path.letter.letter-09 {
-  animation-delay: 0.9s;
-}
-.mainlogo svg g.naming path.letter.letter-10 {
-  animation-delay: 0.95s;
-}
-.mainlogo svg g.naming path.letter.letter-11 {
-  animation-delay: 1s;
-}
-.mainlogo svg g.naming path.letter.letter-12 {
-  animation-delay: 1.05s;
-}
-.mainlogo svg g.naming path.letter.letter-13 {
-  animation-delay: 1.1s;
-}
-.mainlogo svg g.naming path.letter.letter-14 {
-  animation-delay: 1.15s;
 }
 // Joystick
 .joystick-area {
