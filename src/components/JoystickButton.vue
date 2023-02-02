@@ -52,26 +52,5 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "JoystickButton",
-  props: {
-    tip: {
-      type: String,
-      required: true,
-    },
-
-    caption: {
-      type: String,
-      default: "",
-    },
-
-    link: {
-      type: String,
-      default: "#",
-    },
-
-    status: {
-      type: String,
-      default: "visible",
-    },
-  },
 });
 </script>

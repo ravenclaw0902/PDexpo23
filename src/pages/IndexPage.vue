@@ -5,8 +5,10 @@
   <q-page class="flex flex-center content-section">
     <!--|  Greetings section  |-->
     <q-card class="home-area bg-white relative-position row flex-center">
-      <h1 class="home-title">АО «РУССКИЙ ПРОДУКТ»</h1>
-      <h3 class="home-subtitle">
+      <h1 class="flex-center flex-center home-title title-scripted">
+        АО «РУССКИЙ ПРОДУКТ»
+      </h1>
+      <h3 class="flex-center home-subtitle title-scripted">
         Лучшие традиции отечественного пищевого производства!
       </h3>
       <div class="flex home-descr">
