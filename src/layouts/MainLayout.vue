@@ -33,7 +33,9 @@
         >
           <q-tooltip class="bg-white text-red">Управление</q-tooltip>
         </q-btn>
-        <q-item> </q-item>
+        <div class="flex flex-center mainlogo">
+          <CompanyLogo></CompanyLogo>
+        </div>
       </q-toolbar>
     </q-header>
 
@@ -61,6 +63,7 @@
 
 <script>
 import { defineComponent, ref } from "vue";
+import CompanyLogo from "components/CompanyLogo.vue";
 import EssentialLink from "components/EssentialLink.vue";
 
 const linksList = [
@@ -91,6 +94,7 @@ export default defineComponent({
   name: "MainLayout",
 
   components: {
+    CompanyLogo,
     EssentialLink,
   },
 

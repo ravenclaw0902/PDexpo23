@@ -1,7 +1,7 @@
 <template>
   <!--|  BreadCrumbs  |-->
-  <div class="breadcrumbs-row">
-    <q-breadcrumbs class="text-pink" active-color="red">
+  <div class="flex flex-start breadcrumbs-row">
+    <q-breadcrumbs class="text-red" active-color="red">
       <template v-slot:separator>
         <q-icon size="1.2em" name="arrow_forward" color="red" />
       </template>
@@ -9,7 +9,8 @@
       <BreadCrumbs></BreadCrumbs>
     </q-breadcrumbs>
   </div>
-  <q-page class="flex flex-center">
+  <!--|  Main  |-->
+  <q-page class="flex flex-center content-section">
     <!--|  Navigation tabs  |-->
     <q-card
       class="custom-tabsname cursor-pointer bg-white relative-position row flex-center"
@@ -24,11 +25,11 @@
     <!--|  Navigation joystick  |-->
     <q-card
       v-touch-swipe.mouse.up.left.down.right="handleSwipe"
-      class="custom-area cursor-pointer bg-white relative-position row flex-center"
+      class="joystick-area cursor-pointer bg-white relative-position row flex-center"
     >
-      <div class="custom-block"></div>
+      <div class="joystick-block"></div>
       <q-btn
-        class="glossy custom-button"
+        class="glossy joystick-button"
         rounded
         push
         no-caps
@@ -37,13 +38,13 @@
         to="../"
         label="Назад"
       />
-      <div class="custom-block"></div>
-      <div class="custom-block"></div>
-      <div class="custom-block center-block flex flex-center">
+      <div class="joystick-block"></div>
+      <div class="joystick-block"></div>
+      <div class="joystick-block center-block flex flex-center">
         <JoystickButton></JoystickButton>
       </div>
       <q-btn
-        class="glossy custom-button"
+        class="glossy joystick-button"
         rounded
         push
         no-caps
@@ -52,9 +53,9 @@
         to="../about/"
         label="О компании"
       />
-      <div class="custom-block"></div>
+      <div class="joystick-block"></div>
       <q-btn
-        class="glossy custom-button"
+        class="glossy joystick-button"
         rounded
         push
         no-caps
@@ -63,7 +64,7 @@
         to="../contacts/"
         label="Контакты"
       />
-      <div class="custom-block"></div>
+      <div class="joystick-block"></div>
     </q-card>
   </q-page>
 </template>
@@ -78,25 +79,6 @@
   padding: .1%
   border-radius: 0
   box-shadow: none
-.custom-area
-  width: auto
-  max-width: 95vw
-  height: auto
-  max-height: 75vh
-  margin: auto auto .5rem
-  padding: .1%
-  border-radius: 0
-  box-shadow: none
-.custom-block
-  width: 100%
-  max-width: calc(100% / 3)
-  height: auto
-  min-height: 6rem
-  background: none
-  color: none
-.custom-button
-  width: 100%
-  max-width: calc(100% / 3)
 </style>
 
 <script>

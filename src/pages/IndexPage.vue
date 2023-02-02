@@ -1,5 +1,8 @@
 <template>
-  <q-page class="flex flex-center">
+  <!--|  BreadCrumbs  |-->
+  <div class="flex flex-start breadcrumbs-row"></div>
+  <!--|  Main  |-->
+  <q-page class="flex flex-center content-section">
     <!--|  Navigation tabs  |-->
     <q-card class="custom-tabsname bg-white relative-position row flex-center">
       <q-tabs>
@@ -17,13 +20,13 @@
     <!--|  Navigation joystick  |-->
     <q-card
       v-touch-swipe.mouse.up.left.down.right="handleSwipe"
-      class="custom-area cursor-pointer bg-white relative-position row flex-center"
+      class="joystick-area cursor-pointer bg-white relative-position row flex-center"
     >
-      <div class="custom-block"></div>
-      <div class="custom-block"></div>
-      <div class="custom-block"></div>
+      <div class="joystick-block"></div>
+      <div class="joystick-block"></div>
+      <div class="joystick-block"></div>
       <q-btn
-        class="glossy custom-button"
+        class="glossy joystick-button"
         rounded
         push
         no-caps
@@ -32,11 +35,11 @@
         to="../catalog/"
         label="Каталог"
       />
-      <div class="custom-block center-block flex flex-center">
+      <div class="joystick-block center-block flex flex-center">
         <JoystickButton></JoystickButton>
       </div>
       <q-btn
-        class="glossy custom-button"
+        class="glossy joystick-button"
         rounded
         push
         no-caps
@@ -45,9 +48,9 @@
         to="../about/"
         label="О компании"
       />
-      <div class="custom-block"></div>
+      <div class="joystick-block"></div>
       <q-btn
-        class="glossy custom-button"
+        class="glossy joystick-button"
         rounded
         push
         no-caps
@@ -56,7 +59,7 @@
         to="../contacts/"
         label="Контакты"
       />
-      <div class="custom-block"></div>
+      <div class="joystick-block"></div>
     </q-card>
   </q-page>
 </template>
@@ -71,34 +74,6 @@
   padding: .1%
   border-radius: 0
   box-shadow: none
-.custom-area
-  width: auto
-  max-width: 100%
-  height: auto
-  max-height: 75vh
-  margin: auto auto .5rem
-  padding: .1%
-  border-radius: 0
-  box-shadow: none
-.home-area
-  width: 100%
-  max-width: 100%
-  height: auto
-  max-height: 75vh
-  margin: 2rem auto
-  padding: .1%
-  border-radius: 0
-  box-shadow: none
-.custom-block
-  width: 100%
-  max-width: calc(100% / 3)
-  height: auto
-  min-height: 6rem
-  background: none
-  color: none
-.custom-button
-  width: 100%
-  max-width: calc(100% / 3)
 </style>
 
 <script>
