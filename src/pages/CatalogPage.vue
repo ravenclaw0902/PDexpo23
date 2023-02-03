@@ -22,6 +22,9 @@
       </q-tabs>
     </q-card>
 
+    <!--|  Brands itemlist  |-->
+    <q-item></q-item>
+
     <!--|  Navigation joystick  |-->
     <q-card
       v-touch-swipe.mouse.up.left.down.right="handleSwipe"
