@@ -21,7 +21,7 @@
         <q-route-tab active to="../about/" label="О компании" />
       </q-tabs>
     </q-card>
-
+    <q-list class="flex flex-center"></q-list>
     <!--|  Navigation joystick  |-->
     <q-card
       v-touch-swipe.mouse.up.left.down.right="handleSwipe"
