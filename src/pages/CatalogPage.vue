@@ -30,44 +30,9 @@
       v-touch-swipe.mouse.up.left.down.right="handleSwipe"
       class="joystick-area cursor-pointer bg-white relative-position row flex-center"
     >
-      <div class="joystick-block"></div>
-      <q-btn
-        class="glossy joystick-button"
-        rounded
-        push
-        no-caps
-        size="md"
-        color="red"
-        to="../"
-        label="Назад"
-      />
-      <div class="joystick-block"></div>
-      <div class="joystick-block"></div>
       <div class="joystick-block center-block flex flex-center">
         <JoystickButton></JoystickButton>
       </div>
-      <q-btn
-        class="glossy joystick-button"
-        rounded
-        push
-        no-caps
-        size="md"
-        color="red"
-        to="../about/"
-        label="О компании"
-      />
-      <div class="joystick-block"></div>
-      <q-btn
-        class="glossy joystick-button"
-        rounded
-        push
-        no-caps
-        size="md"
-        color="red"
-        to="../contacts/"
-        label="Контакты"
-      />
-      <div class="joystick-block"></div>
     </q-card>
   </q-page>
 </template>
